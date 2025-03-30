@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+}
+.calculator{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: orange;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: outset;
+}
+   
+#result{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: black ;
+    outline: none;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.5) inset;
+    color: black;
+}    
+    
+.buttons{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    /* background-color: black; */
+    grid-gap: 5px;
+   
+   
+}
+
+button{
+    font-size: 20px ;
+    
+}
+    
+    
+
+.clear{
+    border-radius: 4px;
+    color: rgb(244, 228, 7);
+    background-color: red;
+}
+.equal{
+    border-radius: 4px;
+    background-color: gold;
+    grid-row: span 2;
+    
+    
+}
+
+
+.operator{
+    border-radius: 4px;
+    background-color: brown;
+}
+
+
+.number{
+    color: brown;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+button:hover{
+   
+    color: white;
+   
+}
+
+
+.Decimal{
+    background-color: gray;
+    border-radius: 4px;
+}
+
