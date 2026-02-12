@@ -19,6 +19,23 @@ const buttonsEle = document.querySelectorAll("button")
         })
  }
 
+ function calculate() {
+    let exp = document.getElementById("display").value;
+
+    // Example: 5^2
+    let parts = exp.split("^");
+
+    if (parts.length === 2) {
+        let base = Number(parts[0]);
+        let power = Number(parts[1]);
+        let result = Math.pow(base, power);
+        document.getElementById("display").value = result;
+    } else {
+        document.getElementById("display").value = eval(exp);
+    }
+}
+
+
   function clearResult(){
      inputEle.value = ""
  }
